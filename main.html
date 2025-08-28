@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <canvas id="bg-canvas"></canvas>
     <header class="site-header">
         <div class="container">
             <h1 class="brand"><i class="fas fa-star"></i> MisterDesign</h1>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
                     <li><a href="#bannieres">Bannières</a></li>
                     <li><a href="#logos">Logos</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -29,25 +31,32 @@
 
     <section id="hero" aria-label="Introduction">
         <div class="container hero-inner">
-            <div class="hero-copy">
+            <div class="hero-copy reveal">
                 <h2>Designs néon pour marques audacieuses</h2>
                 <p>Je conçois des bannières et logos futuristes mêlant typographie, glow et textures holographiques.</p>
                 <div class="hero-ctas">
                     <a href="#services" class="btn">Voir les services</a>
-                    <a href="#portfolio" class="btn ghost">Portfolio</a>
+                    <a href="#bannieres" class="btn ghost">Portfolio</a>
                 </div>
             </div>
             <div class="hero-art" aria-hidden="true"></div>
         </div>
     </section>
 
+    <section id="about" class="container">
+        <h2>À propos</h2>
+        <div class="about-content reveal">
+            <p>Je suis MisterDesign, passionné par les esthétiques futuristes et les identités visuelles singulières. Mon approche mélange précision typographique, textures holographiques et contrastes néon pour des visuels mémorables.</p>
+        </div>
+    </section>
+
     <section id="services" class="container">
         <h2>Services</h2>
-        <div class="service">
+        <div class="service reveal">
             <h3><i class="fas fa-paint-brush"></i> Conception de Bannières</h3>
             <p>Bannières dynamiques, motion-ready, avec effets de lumière et dégradés prismatiques.</p>
         </div>
-        <div class="service">
+        <div class="service reveal">
             <h3><i class="fas fa-cogs"></i> Création de Logos</h3>
             <p>Logos minimalistes ou organiques, style néon/verre pour une identité iconique.</p>
         </div>
@@ -55,19 +64,19 @@
 
     <section id="bannieres" class="container">
         <h2>Mes Bannières</h2>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="portfolio1.jpg" alt="Bannière Kurapika">
             <p>Kurapika</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="portfolio2.jpg" alt="Bannière Batman">
             <p>Batman</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="portfolio3.jpg" alt="Bannière Hisoka">
             <p>Hisoka</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="portfolio4.jpg" alt="Bannière A-Train">
             <p>A-Train</p>
         </div>
@@ -75,19 +84,19 @@
 
     <section id="logos" class="container">
         <h2>Mes Logos</h2>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="logo1.jpg" alt="Logo Sukuna">
             <p>Sukuna</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="logo2.jpg" alt="Logo Pop Smoke">
             <p>Pop smoke</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="logo3.jpg" alt="Logo I Can't Anymore">
             <p>I CAN'T ANYMORE</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal">
             <img src="logo4.jpg" alt="Logo Gon">
             <p>Gon</p>
         </div>
@@ -95,7 +104,7 @@
     <section id="contact" class="container">
         <h2>Contactez-moi</h2>
         <p class="price-note">⚡ Prix logo/bannière: 1€ ⚡</p>
-        <div class="contact-form">
+        <div class="contact-form reveal">
             <form action="submit_contact.php" method="POST">
                 <div class="form-group">
                     <label for="name">Nom:</label>
@@ -138,5 +147,6 @@
             <p><a href="mailto:mistercat2456@gmail.com">mistercat2456@gmail.com</a></p>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
