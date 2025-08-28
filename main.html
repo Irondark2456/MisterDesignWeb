@@ -3,87 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services de Conception de Bannières et Logos</title>
+    <meta name="theme-color" content="#00d1ff">
+    <title>MisterDesign — Studio Futuriste (Bannières & Logos)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <h1><i class="fas fa-star"></i> MisterDesign</h1>
-            <nav>
+            <h1 class="brand"><i class="fas fa-star"></i> MisterDesign</h1>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Exemples</a></li>
+                    <li><a href="#bannieres">Bannières</a></li>
+                    <li><a href="#logos">Logos</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#order">Commander</a></li>
+                    <li><a class="cta" href="#order">Commander</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Achetez et le bonheur est présent</h2>
-            <p>Création de bannières et de logos qui font passer votre style au niveau supérieur.</p>
-            <a href="#services" class="btn">Explorez Nos Services</a>
+    <section id="hero" aria-label="Introduction">
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <h2>Designs néon pour marques audacieuses</h2>
+                <p>Je conçois des bannières et logos futuristes mêlant typographie, glow et textures holographiques.</p>
+                <div class="hero-ctas">
+                    <a href="#services" class="btn">Voir les services</a>
+                    <a href="#portfolio" class="btn ghost">Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true"></div>
         </div>
     </section>
 
     <section id="services" class="container">
-        <h2>Mes Services</h2>
+        <h2>Services</h2>
         <div class="service">
             <h3><i class="fas fa-paint-brush"></i> Conception de Bannières</h3>
-            <p>Des bannières modernes et dynamiques pour attirer l'attention.</p>
+            <p>Bannières dynamiques, motion-ready, avec effets de lumière et dégradés prismatiques.</p>
         </div>
         <div class="service">
             <h3><i class="fas fa-cogs"></i> Création de Logos</h3>
-            <p>Des logos futuristes et innovants pour une identité visuelle forte.</p>
+            <p>Logos minimalistes ou organiques, style néon/verre pour une identité iconique.</p>
         </div>
     </section>
 
-    <section id="portfolio" class="container">
-        <h2>Mes bannières</h2>
+    <section id="bannieres" class="container">
+        <h2>Mes Bannières</h2>
         <div class="portfolio-item">
-            <img src="portfolio1.jpg" alt="Projet 1">
+            <img src="portfolio1.jpg" alt="Bannière Kurapika">
             <p>Kurapika</p>
         </div>
         <div class="portfolio-item">
-            <img src="portfolio2.jpg" alt="Projet 2">
+            <img src="portfolio2.jpg" alt="Bannière Batman">
             <p>Batman</p>
         </div>
         <div class="portfolio-item">
-            <img src="portfolio3.jpg" alt="Projet 3">
+            <img src="portfolio3.jpg" alt="Bannière Hisoka">
             <p>Hisoka</p>
         </div>
         <div class="portfolio-item">
-            <img src="portfolio4.jpg" alt="Projet 4">
+            <img src="portfolio4.jpg" alt="Bannière A-Train">
             <p>A-Train</p>
         </div>
+    </section>
 
-        <section id="portfolio" class="container">
-            <h2>Mes Logos</h2>
-            <div class="portfolio-item">
-                <img src="logo1.jpg" alt="Projet 1">
-                <p>Sukuna</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="logo2.jpg" alt="Projet 2">
-                <p>Pop smoke</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="logo3.jpg" alt="Projet 3">
-                <p>I CAN'T ANYMORE</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="logo4.jpg" alt="Projet 4">
-                <p>Gon</p>
-            </div>
-
+    <section id="logos" class="container">
+        <h2>Mes Logos</h2>
+        <div class="portfolio-item">
+            <img src="logo1.jpg" alt="Logo Sukuna">
+            <p>Sukuna</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="logo2.jpg" alt="Logo Pop Smoke">
+            <p>Pop smoke</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="logo3.jpg" alt="Logo I Can't Anymore">
+            <p>I CAN'T ANYMORE</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="logo4.jpg" alt="Logo Gon">
+            <p>Gon</p>
+        </div>
     </section>
     <section id="contact" class="container">
         <h2>Contactez-moi</h2>
-        <h2>⚡ATTENTION : PRIX DU LOGO / DE LA BANNIERE : 1 EUROS⚡</h2>
+        <p class="price-note">⚡ Prix logo/bannière: 1€ ⚡</p>
         <div class="contact-form">
             <form action="submit_contact.php" method="POST">
                 <div class="form-group">
